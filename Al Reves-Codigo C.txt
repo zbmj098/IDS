@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int Num;
+    int Res;
+    int Invert=0;
+    printf("Ingresar numero entero para invertir:\n");
+    scanf("%i",&Num);
+    Res=Num;
+    do{
+        Invert=Invert*10+(Res%10);
+        Res=(Res-(Res%10))/10;
+    } while (Res!=0);
+    printf("El numero inverso es:\n%d",Invert);
+return 0;
+}

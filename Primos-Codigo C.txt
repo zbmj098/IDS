@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main()
+{
+    int Num;
+    int Rep;
+    int NumDiv;
+    printf("Ingresar numero entero para validar si es numero primo: ");
+    scanf("%i",&Num);
+    Rep=0;
+    NumDiv=0;
+    if(Num>1)
+    {
+        do{
+            Rep++;
+            if(Num % Rep == 0)
+            {
+                NumDiv++;
+            }
+        } while (Num!=Rep);
+        if(NumDiv==2)
+        {
+            printf("El numero es primo");
+        }
+        else
+        {
+            printf("El numero no es primo");
+        }
+    }
+    else
+    {
+        printf("El numero no es primo");
+    }
+return 0;
+}

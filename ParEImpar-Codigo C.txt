@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    int Num;
+    int Rep;
+    printf("Ingresa 10 números entero para validar si son números Par o Impar:\n");
+    Rep=0;
+    do{
+
+        scanf("%i",&Num);
+        Rep++;
+        if (Num % 2 ==0)
+        {
+            printf("Es numero Par\n");
+        }
+        else
+        {
+            printf("No es numero Par\n");
+        }
+    } while (Rep<10);
+return 0;
+}
